@@ -1,0 +1,6 @@
+framework module GroupPlay {
+  umbrella header "GroupPlay.h"
+
+  export *
+  module * { export * }
+}
