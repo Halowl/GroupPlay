@@ -11,19 +11,10 @@ Pod::Spec.new do |s|
   s.author           = { "hal" => "sg6548676@gmail.com" }
   s.source           = { :git => "https://github.com/gongjujun/GroupPlay.git", :tag => s.version }
   # s.social_media_url = 'https://www.doyep.cn/'
-
+  s.ios.deployment_target = "9.0"
   s.platform     = :ios
-  # s.ios.deployment_target = '5.0'
-  # s.osx.deployment_target = '10.7'
   s.requires_arc = true
-
-  #s.source_files = 'WZMarqueeView/*'
-  # s.resources = 'Assets'
-
-  # s.ios.exclude_files = 'Classes/osx'
-  # s.osx.exclude_files = 'Classes/ios'
-  # s.public_header_files = 'Classes/**/*.h'
-  s.vendored_frameworks = 'Framework.framework'
-  s.frameworks = 'Foundation'
-
+  s.vendored_frameworks = 'GroupPlay.framework'
 end
+
+
