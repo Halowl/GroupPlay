@@ -2,7 +2,7 @@
 //  GroupPlay.h
 //  GroupPlay
 //
-//  Created by mac on 2021/8/18.
+//  Created by mac on 2021/11/10.
 //
 
 #import <Foundation/Foundation.h>
@@ -14,6 +14,7 @@ FOUNDATION_EXPORT double GroupPlayVersionNumber;
 FOUNDATION_EXPORT const unsigned char GroupPlayVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <GroupPlay/PublicHeader.h>
+
 
 #import <GroupPlay/GroupPlayModel.h>
 #import <GroupPlay/GrougPlayManger.h>

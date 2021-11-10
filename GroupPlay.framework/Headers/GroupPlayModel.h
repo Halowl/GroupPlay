@@ -1,7 +1,8 @@
 //
-//  GrougPlayModel.h
+//  GroupPlayModel.h
+//  GroupPlay
 //
-//  Created by mac on 2021/8/4.
+//  Created by mac on 2021/11/10.
 //
 
 #import <Foundation/Foundation.h>
@@ -67,5 +68,4 @@
 + (instancetype)initModelWithDict:(NSDictionary*)dict;
 
 @end
-
 

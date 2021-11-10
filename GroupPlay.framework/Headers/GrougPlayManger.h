@@ -1,12 +1,15 @@
 //
-//  GroupPlayManger.h
+//  GrougPlayManger.h
+//  GroupPlay
 //
-//  Created by mac on 2021/8/4.
+//  Created by mac on 2021/11/10.
 //
 
 #import <Foundation/Foundation.h>
-#import "GroupPlayModel.h"
-#import "GPWebSocket.h"
+
+#import <GroupPlay/GroupPlayModel.h>
+#import <GroupPlay/GPWebSocket.h>
+
 typedef void(^SocketFailureSuccess)(NSInteger code, NSDictionary * msg);
 typedef void(^SocketRequestSuccess)(GroupPlayModel *model);
 @protocol GrougPlayMangerDelegate <NSObject>
@@ -36,6 +39,13 @@ typedef void(^SocketRequestSuccess)(GroupPlayModel *model);
 /** socket连接失败*/
 - (void)socketDidFailWithError:(NSError *)error;
 
+/** 应用进入后台*/
+- (void)appDidEnterBackground;
+
+/** 应用进入前台*/
+- (void)appDidBecomeActiveNotification;
+
+
 @end
 
 @interface GrougPlayManger : NSObject
@@ -55,11 +65,13 @@ typedef void(^SocketRequestSuccess)(GroupPlayModel *model);
 /** 开始游戏*/
 - (void)startGameWithGameType:(int)gameType;
 
+
 /** 答题*/
 - (void)answerTheQuestionsWithMsg:(NSString *)msg AndCurrentSize:(int)currentSize;
 
 /** 结束游戏*/
 - (void)endGame;
+
 
 /** 获取当前题目*/
 - (void)getCurrentGameMessage;
@@ -70,4 +82,6 @@ typedef void(^SocketRequestSuccess)(GroupPlayModel *model);
 /** 获取游戏状态*/
 - (void)getGameStatus;
 @end
+
+
 
