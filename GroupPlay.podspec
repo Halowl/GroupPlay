@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "GroupPlay"
-  spec.version      = "1.1.0.0"
+  spec.version      = "1.1.1"
   spec.summary      = "A good activity tool for iOS"
   spec.description  = <<-DESC
                       "开放平台SDK最新版"
